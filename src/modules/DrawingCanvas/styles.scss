@@ -1,0 +1,18 @@
+@import "../../lib/styles/variables";
+
+.drawingCanvas {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  flex-direction: column;
+
+  & &__interval {
+    display: flex;
+  }
+
+  & &__canvas {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid $global-color-gray-3;
+  }
+}

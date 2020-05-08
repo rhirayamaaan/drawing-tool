@@ -1,0 +1,17 @@
+@import "../../lib/styles/variables";
+
+.textField {
+  display: inline-flex;
+  align-items: center;
+
+  & &__input {
+    padding: 0 8px;
+    border: 1px solid $global-color-gray-2;
+    border-radius: 4px;
+    line-height: 28px;
+  }
+
+  & &__label + &__input {
+    margin-left: 12px;
+  }
+}
