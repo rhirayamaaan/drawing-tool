@@ -1,0 +1,10 @@
+@import "../../lib/styles/variables";
+
+.header {
+  background-color: $global-color-black;
+  color: $global-color-white;
+  padding: 32px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: normal;
+}

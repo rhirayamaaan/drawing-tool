@@ -19,11 +19,14 @@
   },
   "homepage": "https://github.com/hiraryo0213/drawing-tool#readme",
   "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.14.1",
     "postcss-clean": "^1.1.0",
@@ -44,6 +47,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "ress": "^2.0.4"
   }
 }

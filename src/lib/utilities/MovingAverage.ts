@@ -1,27 +1,16 @@
-// const getMovingAverage = (array: Array<number>, newValue: number, limit: number = 7) => {
-
-//   let sliceIndex = 1;
-
-//   if (array.length > limit) {
-//     sliceIndex = array.length - limit + 1;
-//   }
-
-//   const movedArray = [...array.slice(sliceIndex), newValue];
-// }
-
 export default class MovingAverage {
   private _sliceIndex = 1;
 
   private _movedArray: Array<number>;
 
-  private _averageValue: number;
+  private _averagedValue: number;
 
   public get movedArray() {
     return this._movedArray;
   }
 
-  public get averageValue() {
-    return this._averageValue;
+  public get averagedValue() {
+    return this._averagedValue;
   }
 
   constructor(array: Array<number>, newValue: number, limit: number = 7) {
@@ -33,7 +22,7 @@ export default class MovingAverage {
 
     this._movedArray = [...array.slice(this._sliceIndex), newValue];
 
-    this._averageValue = this._movedArray.reduce((prev, current) => prev + current) / this._movedArray.length;
+    this._averagedValue = this._movedArray.reduce((prev, current) => prev + current) / this._movedArray.length;
 
     return this;
   }

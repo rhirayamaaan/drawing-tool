@@ -1,0 +1,8 @@
+@import "../../lib/styles/variables";
+
+.button {
+  border: 1px solid $link-color;
+  border-radius: 4px;
+  padding: 7px 11px;
+  color: $link-color;
+}

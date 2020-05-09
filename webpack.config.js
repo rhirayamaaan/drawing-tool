@@ -17,7 +17,7 @@ const createStyleLoaders = (isProduction) => [
 
 module.exports = (env) => ({
   mode: 'production',
-  entry: ['./src/App.ts'],
+  entry: ['./src/App.tsx'],
   output: {
     publicPath: '/',
     path: `${__dirname}/build/`,
@@ -25,13 +25,13 @@ module.exports = (env) => ({
   },
   resolve: {
     // importする拡張子の指定
-    extensions: ['.ts', '.js', '.scss', '.css'],
+    extensions: ['.ts', '.tsx', '.js', '.scss', '.css'],
   },
   // loaderの設定
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.(ts|tsx)$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
